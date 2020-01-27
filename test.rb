@@ -21,6 +21,11 @@ server.mount('/indicate.cgi', WEBrick::HTTPServlet::CGIHandler, 'indicate.rb')
 # indicate.rbに送信することができるようになります。
 server.mount('/goya.cgi', WEBrick::HTTPServlet::CGIHandler, 'goya.rb')
 
+server.mount('/goya2.cgi', WEBrick::HTTPServlet::CGIHandler, 'goya2.rb')
+
+server.mount('/goya3.cgi', WEBrick::HTTPServlet::CGIHandler, 'goya3.rb')
+
+
 server.mount('/', WEBrick::HTTPServlet::ERBHandler, 'exam.html.erb')
 
 

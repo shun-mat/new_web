@@ -10,7 +10,6 @@ begin
   # .execで、goyaDBに"select weight, give_for from crops;"
   # のSQLの命令文を直接実行し、その結果をresult変数に格納する
   result = connection.exec("select　* from crops;")
-binding.irb
   # 取り出した各行を処理する
   result.each do |record|
       # 各行を取り出し、putsでターミナル上に出力する
